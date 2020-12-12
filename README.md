@@ -32,3 +32,8 @@ java -jar -Djava.security.debug=all -Djavax.net.debug=all -Dcom.safelogic.crypto
 ```
 java -jar -Djava.security.debug=all -Djavax.net.debug=all -Dcom.safelogic.cryptocomply.fips.approved_only=true $HOME/.m2/repository/com/szilardnemeth/security/security-playground/1.0-SNAPSHOT/security-playground-1.0-SNAPSHOT-jar-with-dependencies.jar WITH_EMPTY_KEYSTORE
 ```
+
+## Build, copy to cluster, run on cluster
+```
+./test-keystore.sh
+```
