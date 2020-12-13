@@ -90,6 +90,8 @@ public class SecurityTest {
   public SecurityTest(TrustManagerFactoryInitMode initMode) {
     this.initMode = initMode;
     srand = new SecureRandom();
+    
+    TruststoreSettingsPrinter.print();
 
     final boolean fipsEnabled = SecurityUtils.isFipsEnabled();
     if (fipsEnabled) {
